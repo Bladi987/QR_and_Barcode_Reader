@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">QR_and_Barcode_Reader</string>
+    <string name="submit">Scan</string>
+    <string name="title_activity_home">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">ScanCode To PC</string>
+    <string name="nav_header_subtitle">hfsoluciones@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+    <!--TODO: String general-->
+    <string name="Dialog_Add_Server_Title">Add Server</string>
+    <string name="Dialog_Add_Server_Name">Nombre Server:</string>
+    <string name="Dialog_Add_Server_ip">Direccion</string>
+    <string name="Dialog_Add_Server_btnAcept">Guardar</string>
+    <string name="Dialog_Add_Server_Cancel">Cancelar</string>
+    <string name="Dialog_Add_Server_hint_name">Nombre (opcional)</string>
+    <string name="Dialog_Add_Server_Address">Direccion:</string>
+    <string name="Dialog_Add_Server_hint_address">192.168.1.1</string>
+    <string name="Dialog_Add_Server_hint_Port">Puerto</string>
+    <string name="Dialog_Add_Server_Port">Puerto:</string>
+    <!--FIN: String general-->
+
+</resources>

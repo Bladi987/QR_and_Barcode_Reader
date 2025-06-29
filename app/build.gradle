@@ -1,0 +1,63 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.example.qr_and_barcode_reader'
+    compileSdkVersion 34
+    buildToolsVersion "34.0.0"
+
+    defaultConfig {
+        applicationId "com.example.qr_and_barcode_reader"
+        minSdkVersion 23
+        targetSdkVersion 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+// Core AndroidX libraries (actualizadas)
+    implementation 'androidx.appcompat:appcompat:1.6.1' // Ultima version estable
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4' // Ultima version estable
+
+    // Material Design - Elimina la duplicada y usa la última estable
+    implementation 'com.google.android.material:material:1.12.0' // Ultima version estable
+
+    // Navigation - Actualiza a las últimas estables
+    implementation 'androidx.navigation:navigation-fragment:2.7.7'
+    implementation 'androidx.navigation:navigation-ui:2.7.7'
+
+    // Lifecycle - Actualiza a las últimas estables
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.7.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0'
+
+    // Legacy Support (si es estrictamente necesaria, pero muchas veces se puede evitar con AndroidX)
+    // Puedes mantenerla por ahora si tu código la usa, pero intenta ver si puedes removerla
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0' // Ya está en la última, pero considera si es necesaria.
+
+    // Volley - ¡La que no se encontraba! Actualiza a la última estable
+    implementation 'com.android.volley:volley:1.2.1' // Esta es la última versión estable
+
+    // ZXing Android Embedded - ¡La otra que no se encontraba! Actualiza a la última estable
+    implementation 'com.journeyapps:zxing-android-embedded:4.3.0' // Esta es la última versión estable
+
+    // Testing libraries (actualizadas)
+    testImplementation 'junit:junit:4.13.2' // Ultima version estable
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5' // Ultima version estable
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1' // Ultima version estable
+}
